@@ -292,7 +292,7 @@ const BuyTicketsPage = () => {
 
     try {
       const orderRes = await fetch(
-        "https://tedxbackend.workers.dev/api/payment/create-order"
+        "/api/payment/create-order"
         //"https://dyp-tedx-backend-server.onrender.com/api/payment/create-order",
         {
           method: "POST",
@@ -345,7 +345,7 @@ const BuyTicketsPage = () => {
   const verifyPayment = async (response) => {
     try {
       const res = await fetch(
-        "https://tedxbackend.workers.dev/api/payment/verify-payment"
+        "/api/payment/verify-payment"
         //"https://dyp-tedx-backend-server.onrender.com/api/payment/verify-payment",
         {
           method: "POST",
