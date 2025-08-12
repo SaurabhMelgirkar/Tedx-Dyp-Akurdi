@@ -292,8 +292,8 @@ const BuyTicketsPage = () => {
 
     try {
       const orderRes = await fetch(
-        "https://vercelwaalabackend.vercel.app/api/payment/create-order"
-        //"https://dyp-tedx-backend-server.onrender.com/api/payment/create-order",
+        // "https://vercelwaalabackend.vercel.app/api/payment/create-order"
+        "https://dyp-tedx-backend-server.onrender.com/api/payment/create-order",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -345,8 +345,8 @@ const BuyTicketsPage = () => {
   const verifyPayment = async (response) => {
     try {
       const res = await fetch(
-        "https://vercelwaalabackend.vercel.app/api/payment/verify-payment"
-        //"https://dyp-tedx-backend-server.onrender.com/api/payment/verify-payment",
+        // "https://vercelwaalabackend.vercel.app/api/payment/verify-payment"
+        "https://dyp-tedx-backend-server.onrender.com/api/payment/verify-payment",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
